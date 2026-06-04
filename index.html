@@ -6,6 +6,18 @@
     <title>Dashboard ZH</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://media-exp1.licdn.com/dms/image/C510BAQFMlxQmr6gYSw/company-logo_200_200/0?e=2159024400&v=beta&t=yODnRctkqD4CsjivGWc3EMr4U_vz5airDwzogM_0sA4">
+    <link rel="manifest" href="/zhdash/manifest.json">
+    <meta name="theme-color" content="#00adb5">
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/zhdash/sw.js')
+            .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+            .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+        });
+      }
+    </script>
 </head>
 <body>
 
