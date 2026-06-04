@@ -79,6 +79,33 @@
             </div>
         </div>
 
+        <div class="calculadora-container">
+            <h1>Regra de 3</h1>
+            <div class="regra3-grid">
+                <div class="input-group">
+                    <label>Se este valor (A)</label>
+                    <input type="number" id="regra_a" placeholder="Ex: 10">
+                </div>
+                <div class="input-group">
+                    <label>Está para (B)</label>
+                    <input type="number" id="regra_b" placeholder="Ex: 100">
+                </div>
+                <div class="input-group">
+                    <label>Assim como (C)</label>
+                    <input type="number" id="regra_c" placeholder="Ex: 20">
+                </div>
+                <div class="input-group">
+                    <label>Está para (X)</label>
+                    <input type="text" value="?" disabled style="text-align: center; font-weight: bold; background: #eee;">
+                </div>
+            </div>
+            <button onclick="calcularRegra3()">Calcular X</button>
+            <div class="resultado-box">
+                Valor de X:
+                <h2 id="resultado_regra3">0.00</h2>
+            </div>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
