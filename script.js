@@ -1,22 +1,5 @@
-const linksEmpresa = {
-    kpi: "aHR0cHM6Ly9kYmNvdmVyLnNoYXJlcG9pbnQuY29tLzp4Oi9zL29wZXJhdGlvbnMvRVhZZzRVTFVNQmxQaUZVRkhqQU52RVVCaERRVC1OQjhqTjhCTmVOYUttWnlQdz9lPTQlM2FHTFh2aEMmYXQ9OQ=="
-};
-
-// Função para abrir os links apenas no clique
-function configurarLinks() {
-    const btnKpi = document.getElementById('link-kpi');
-
-    if(btnKpi) {
-        btnKpi.addEventListener('click', (e) => {
-            e.preventDefault();
-            // Decodifica e abre
-            window.open(atob(linksEmpresa.kpi), '_blank');
-        });
-    }
-}
-
 // Inicializa quando o DOM estiver pronto
-document.addEventListener('DOMContentLoaded', configurarLinks);
+document.addEventListener('DOMContentLoaded');
 
 // --- LÓGICA: Calculadora de Horas ---
 function calcularHoras() {
